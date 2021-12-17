@@ -31,17 +31,20 @@ if ((evenOdd == 'pari') || (evenOdd == 'Pari') || (evenOdd == 'dispari') || (eve
         console.log('numero cpu: ', numberCpu);
         console.log('somma: ', sum);
         
-        if ((evenOdd == 'pari') || (evenOdd == 'Pari') && (sum % 2 == 0)){
+        if (((evenOdd == 'pari') || (evenOdd == 'Pari')) && (sum % 2 == 0)){
+            console.log('Hai vinto.')
+        }else if(((evenOdd == 'dispari') || (evenOdd == 'Dispari')) && (sum % 2 != 0)){
             console.log('Hai vinto.')
         }else{
-            console.log('Hai perso.')
+            console.log('Hai perso')
         }
     }else{
         alert('Ricarica la pagina')
     }
-}else {
+}else{
     alert('Ricarica la pagina')
 }
+
 
 
 
