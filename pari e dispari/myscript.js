@@ -7,18 +7,22 @@ Dichiariamo chi ha vinto. */
 
 
 console.log("esercizio 2 pari e dispari")
+//funzione somma 
 
-function sumNumber(){
-    let result = numberUser + numberCpu;
+function sumNumber(num1, num2){
+    let result = num1 + num2;
 
     return result;
 }
 
+//variabili
 let evenOdd = prompt('pari o dispari?');
 let numberUser = '';
 let numberCpu ='';
 let sum = 0;
 
+//limitando il "pari e dispari" e i "numeri" in entrata genero un numero per il computer 
+//faccio la somma di numero cpu e user e riconosco se è pari odispari 
 if ((evenOdd == 'pari') || (evenOdd == 'Pari') || (evenOdd == 'dispari') || (evenOdd == 'Dispari')){
     numberUser = parseInt(prompt('Inserisci numero da 1 a 5:'));
     if ((numberUser == 0) || (numberUser == 1) || (numberUser == 2) ||(numberUser == 3) ||(numberUser ==4) || (numberUser == 5)){
